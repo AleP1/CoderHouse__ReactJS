@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import {NavBar} from './components/NavBar/NavBar.js';
 
 function App() {
+  const NameApp = 'BikO';
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Alu&co + Ale Piñeiro
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Bienvenido a {NameApp}</h1>
+        <p>Ale Piñeiro</p>
+        <NavBar />
       </header>
     </div>
   );
